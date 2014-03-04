@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title> this is your title of the page </title>
+	</head>
+	<body>
+		<h1> This is protein Rice Krispes bars </h1>
+		<p>This recipe will show you how to make rice krispes bars with protein in it. </p>
+		<h4> Ingredients </h4>
+	<ul> 
+	<li> 7 tablespoons of butter </li>
+	<li> 40 large Marshmallows </li>
+	<li> 1 1/2 Protein Powder </li>
+    <li> 6 cups of Rice Krispies cereal </li>
+	</ul>
+		<h4> Preparation </h4>
+		<ol> 
+		<ol type="1">
+		<li> "Melt butter in a large pot and add marshmallows. Stir constantly until marshmallows are completely melted. " </li>
+		<li> "Remove pot from heat and gradually add protein powder. Mix until smooth. Add rice crispy cereal and mix until coated. " </li>
+		<li> "Pour onto a greased 13” x 9” x 2” baking pan or cookie sheet and press down. " </li>
+		<li> "Cool and cut into 12 bars, 3” x 4” each." </li>
+		</ol>
+	</body>
+</html>
