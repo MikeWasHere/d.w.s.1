@@ -1,0 +1,33 @@
+
+body {background-color: #F0F0F0;
+	  font-family: Arial, Verdana, sans-serif;
+	}
+#Garment{
+	color: #484f57;
+	border: 5px solid #dd9a28;
+	background-color: #B8C7CF;
+	padding: 10px;
+	margin: 20px;
+	border-radius: 10px;
+}
+h1 {
+	color: #610B0B;
+}
+
+#retro{	
+	color: #e14f39;
+	border: 5px solid #000000;
+	background-color: #f7f1de;
+	padding: 10px;
+	margin: 20px;
+	border-radius: 10px;
+}
+	
+#asain{
+	color: #671c3d;
+	border: 5px solid #78003d;
+	background-color: #fff188;	
+	padding: 10px;
+	margin: 20px;
+	border-radius: 10px;
+}
