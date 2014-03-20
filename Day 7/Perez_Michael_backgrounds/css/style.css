@@ -38,6 +38,7 @@ h2 {
 	font-style: italic;
 	text-transform:capitalize;
 	letter-spacing: 2px;
+	
 }
 
 p {
@@ -88,12 +89,22 @@ aside a{
 	padding: 0px 0px 20px 50px;
 	border-radius: 10px;
 	float: left;
+	background: #a90329; /* Old browsers */
+	background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+	
 	
 }
 
 #SMD{
 	border-bottom: 3px solid black;
 	width: 30%;
+
 }
 
 #middle{
@@ -117,12 +128,18 @@ aside a{
 #PPS{
 	border-bottom: 3px solid black;
 	width: 30%;
+
 }
 
 #side {
 	text-align: center;
-	
-	
+}
+
+.twitter{
+	background:url("../images/twitter.png") no-repeat;
+	height:50px;
+	width:50px;
+	padding: 10px;
 }
 
 a:link {color:blue;}     
