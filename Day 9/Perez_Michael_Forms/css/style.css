@@ -105,7 +105,7 @@ footer{
 	clear: both;
 	background-color: red;
 	text-align: center;
-	width: 80%;
+	width: 82.5%;
 	padding: 10px;
 	margin: 40px 90px;
 
@@ -189,6 +189,73 @@ footer{
  	width: 90%;
  	margin: 0px 0px 0px 35px;
  } 
+ 
+ #end {
+	background-color: darkred;
+	float: left;
+	width: 84%;
+	margin: 20px 90px;
+	clear: both;
+	border: 3px solid antiquewhite;
+}
+
+input{
+	cursor: pointer;
+}
+
+#bottomLeft{
+    float: left;
+    width: 48%;
+    height: 33%;
+  /*   border-right: 4px antiquewhite solid; */
+	color: antiquewhite;
+    margin: 20px 0px 10px 0px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+#bottomRight{
+    float: left;
+    
+    height: 33%;
+    margin: 10px 1px 10px 10px;
+    border-left: 4px antiquewhite solid;
+	padding: 0px 0px 0px 10px;
+}
+
+#signUp{
+    font-size: 35px;
+    color: antiquewhite;
+   /*  border: 2px solid #FF6840; */    
+    width: 40%;
+    padding: 9px;
+    margin: 4px 0px 9px 5px;
+    font-family: 'Revalia', cursive;
+    height: 20%;
+}
+
+#center{
+	text-align: left;
+}
+
+#feedback{
+    color: antiquewhite;
+	margin: 20px 0px;
+	font-size: 35px;
+	
+    width: 30%;
+    padding: 0px 0px 0px 20px;
+    font-family: 'Revalia', cursive;
+}
+
+form:hover{
+    color: blue;
+}
+
+input:focus{
+    background-color: gray;
+}
 
 a:link {color:blue;}     
 a:visited {color:#FF0000;}  
