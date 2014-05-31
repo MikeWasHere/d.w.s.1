@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Iron-Man</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Peralta' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Play:400,700&subset=greek,latin-ext' rel='stylesheet' type='text/css'>
+
+    <style>
+    h1 {
+        color: Orange;
+        text-align: center;
+        font-family: 'Titillium Web', sans-serif;
+        background-color: darkred;
+        width: 25%;
+        margin: 0 auto;
+        margin-top: 10%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 3em;
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+    }
+
+
+    input[type='range'] {
+        background-color: green;
+    }
+
+    input[type="checkbox"] {
+        background-color: green;
+        width: 3%;
+        clear: both;
+    }
+
+    input[type="radio"] {
+        background-color: green;
+        width: 3%;
+        clear: both;
+    }
+
+    label {
+        display: block;
+        padding-left: 15px;
+        text-indent: -15px;
+        font-family: 'Titillium Web', sans-serif;
+        color: #3a5f28;
+
+    }
+    input {
+        padding: 5px;
+        margin: 0;
+        vertical-align: bottom;
+        position: relative;
+        top: -1px;
+        overflow: hidden;
+        border-radius: 5px;
+        background-color: #FFC;
+        border: 2px solid black
+    }
+
+    input:hover{
+        transition-duration: 1s;
+        box-shadow: 5px 5px black;
+    }
+
+    .in{
+        float: left;
+        width: 50%;
+    }
+
+    #address{
+        width: 97%;
+    }
+
+    #firstname{
+        width: 90%;
+    }
+
+    #lastname{
+        width: 90%;
+    }
+
+    input:focus {
+        background-color: #ff7606;
+        color: yellow;
+    }
+
+    textarea:active {
+        background-color: yellow;
+    }
+
+    .dropdown {
+        color: green;
+    }
+
+    .bottom{
+        margin-bottom: 10px;
+    }
+
+    #city{
+        width: 90%;
+    }
+
+    label[for^="phonenumber"]{
+        width: 25%;
+    }
+
+    input.radio {
+        color: green;
+        text-align: left;
+        padding: 0 30px 30px 0;
+
+    }
+
+
+    form {
+        border: 6px solid darkred;
+        border-top: 10px solid darkred;
+        border-radius: 5px;
+        width: 60%;
+        margin: 0 auto;
+        background-color: #ca8522;
+        padding: 5px;
+
+    }
+
+    #submit {
+        width: 50%;
+        padding: 10px;
+        font-size: 1.5em;
+        height: 10%;
+        margin-top: 20px;
+        -webkit-transition: all 2s ease;
+        -moz-transition: all 2s ease;
+        transition: all 2s ease;
+    }
+
+    #submit:hover {
+        color: #e9ae0e;
+        background-color: #be2626;
+        position: relative;
+        -webkit-transform:translateX(50%);
+        -moz-transform:translateX(50%);
+        transform:translateX(50%);
+
+    }
+
+        /* #Media Queries
+        ================================================== */
+        /* Smaller than standard 960 (devices and browsers) */
+    @media only screen and (max-width: 1024px) {
+        body {
+            width: 100%;
+        }
+
+    }
+
+        /* All Mobile Sizes (devices and browser) */
+    @media only screen and (max-width: 767px) {
+        img{
+            display: none;
+        }
+
+        #logo{
+            background-color: transparent;
+        }
+
+        form {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .in{
+            float: none;
+            width: 100%;
+        }
+        #address{
+            width: 90%;
+        }
+
+        h1{
+            font-size: 1.3em;
+        }
+
+    }
+
+        /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+    @media only screen and (max-width: 480px) {
+
+        body {
+            width: 100%;
+        }
+
+        #logo{
+            background-color: transparent;
+        }
+
+        img{
+            display: none;
+        }
+
+        input {
+            width: 90%
+        }
+
+        form {
+            width: 100%;
+
+        }
+
+        input[type='range'] {
+            width: 60%;
+        }
+
+        #submit{
+            margin: 3% 2.5%;
+            width: 90%;
+        }
+        #submit:hover{
+            -webkit-transform:translateX(0);
+            -moz-transform:translateX(0);
+            transform:translateX(0);
+        }
+
+
+    }
+
+    </style>
+</head>
+
+
+
+<body>
+
+<header id="top">
+    <img src="images/ironman%20logo.png" width="" height="">
+    <h1 id="logo">Contact</h1>
+
+</header>
+<nav>
+    <a href="/" data-nav target="_blank">Home</a>
+    <a href="/gallery.html" data-nav target="_blank">Gallery</a>
+    <a href="/Suits.html" data-nav target="_blank">Suits</a>
+    <a href="/contacts.html" data-nav target="_blank">Contact</a>
+</nav>
+
+<h1>Contact Form </h1>
+
+
+<form class="form">
+    <div class="in">
+        <!-- First Name -->
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" class="bottom" placeholder="ex: Michael" maxlength="30" autocomplete="off" autofocus required>
+    </div>
+
+    <div class="in">
+        <!-- Last Name -->
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" class="bottom" placeholder="ex: Perez" maxlength="30" autocomplete="off" required>
+    </div>
+
+    <!-- Address -->
+    <label for="address">Address</label>
+    <input type="text" id="address" class="bottom" placeholder="ex: 31 hillside ave" maxlength="30" autocomplete="off" required>
+
+    <div class="in">
+        <!-- city -->
+        <label for="city">City</label>
+        <input type="text" id="city" class="bottom" placeholder="ex: Houston" maxlength="30" autocomplete="off" required>
+    </div>
+
+    <div class="in bottom">
+        <!-- Select State -->
+        <label>Select State</label>
+        <select name="State">
+
+            <option value="" selected="selected">Select a State</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+        </select>
+    </div>
+
+    <br>
+
+    <!-- Telephone Number -->
+    <label for="phonenumber">Phone Number</label>
+    <input type="tel" class="bottom" id="phonenumber" placeholder="ex: 555-555-5555" autocomplete="off">
+
+    <!-- Place Of Employment -->
+    <label for="employment">Favorite Suit</label>
+    <input type="text" class="bottom" id="employment" placeholder="ex: Mach II" maxlength="30" autocomplete="off">
+
+    <!-- start date -->
+    <label for="date">Start Date</label>
+    <input type="date" class="bottom" id="date">
+
+    <!-- End date -->
+    <label for="date">End date</label>
+    <input type="date" class="bottom" >
+
+    <!-- Your experience there -->
+    <label for="exp">How much do you like it</label>
+    <input type="text" class="bottom" id="exp" placeholder="ex: Good, OK, Bad" maxlength="30" autocomplete="off">
+
+    <!-- Rate Your Experience -->
+    <label for="range">Rate your experiences on this site 1-10</label>
+    1<input type="range" class="bottom" id="range" min="1" max="10">10
+
+    <!-- What is your gender -->
+    <label for="range">What is your Gender</label>
+    <input type="radio" name="sex" value="male"> Male <br>
+    <input type="radio" name="sex" value="female"> Female<br>
+
+    <!-- Feedback -->
+    <label> Feedback or Questions </label>
+    <textarea class="bottom" cols="40" rows="5" name="myname" maxlength="30"> </textarea>
+
+
+    <br>
+
+
+    <!-- Agree to terms -->
+    <input type="checkbox" name="option1" value="terms"> I agree to the terms and conditions <br>
+    <input type="checkbox" name="option2" value="terms"> I agree all the information above is correct<br>
+
+    <input type="submit" value="Submit" id="submit">
+</form>
+
+<footer> <a href="http://en.wikipedia.org/wiki/ironman">&copy; More Iron-Man Information</a> </footer>
+</body>
+
+
+
+<script src="js/main.js">
+
+</script>
+</html>
+
